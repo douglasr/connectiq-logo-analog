@@ -1,0 +1,11 @@
+<properties>
+
+	<property id="MainTimeUTC" type="boolean">false</property>
+	<property id="UseMilitaryFormat" type="boolean">false</property>
+	<property id="DisplaySecondHand" type="number">2</property>
+    <property id="DisplayStepsIndicator" type="boolean">true</property>
+    <property id="DisplayBatteryIndicator" type="boolean">true</property>
+	<property id="AccentColor" type="number">0xFF0000</property>
+	<property id="SecondHandColor" type="number">0</property>
+
+</properties>

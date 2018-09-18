@@ -1,0 +1,77 @@
+# specify the project manifest
+project.manifest = manifest.xml
+
+# configure CIQ version-based resources
+# ...older devices don't have the always active second hand option
+ciq14 = resources-ciq14
+ciq22 = resources-ciq22
+ciq24 = $(ciq22.resourcePath)
+ciq30 = $(ciq24.resourcePath)
+
+# include the default resources
+base.resourcePath = resources
+
+# configure device specific resources
+approachs60.resourcePath = $(approachs60.resourcePath);$(ciq22)
+d2bravo.resourcePath = $(d2bravo.resourcePath);$(ciq14)
+d2bravo_titanium.resourcePath = $(d2bravo_titanium.resourcePath);$(ciq14)
+d2charlie.resourcePath = $(d2charlie.resourcePath);$(ciq30)
+d2delta.resourcePath = $(d2delta.resourcePath);$(ciq30)
+d2deltapx.resourcePath = $(d2deltapx.resourcePath);$(ciq30)
+d2deltas.resourcePath = $(d2deltas.resourcePath);$(ciq30)
+descentmk1.resourcePath = $(descentmk1.resourcePath);$(ciq24)
+fenix3.resourcePath = $(fenix3.resourcePath);$(ciq14)
+fenix3_hr.resourcePath = $(fenix3_hr.resourcePath);$(ciq14)
+fenix5.resourcePath = $(fenix5.resourcePath);$(ciq30)
+fenix5plus.resourcePath = $(fenix5plus.resourcePath);$(ciq30)
+fenix5s.resourcePath = $(fenix5s.resourcePath);$(ciq30)
+fenix5splus.resourcePath = $(fenix5splus.resourcePath);$(ciq30)
+fenix5x.resourcePath = $(fenix5x.resourcePath);$(ciq30)
+fenix5xplus.resourcePath = $(fenix5xplus.resourcePath);$(ciq30)
+fenixchronos.resourcePath = $(fenixchronos.resourcePath);$(ciq14)
+fr230.resourcePath = $(fr230.resourcePath);$(ciq14)
+fr235.resourcePath = $(fr235.resourcePath);$(ciq14)
+fr630.resourcePath = $(fr630.resourcePath);$(ciq14)
+fr645.resourcePath = $(fr645.resourcePath);$(ciq24)
+fr645m.resourcePath = $(fr645m.resourcePath);$(ciq24)
+fr735xt.resourcePath = $(fr735xt.resourcePath);$(ciq14)
+fr935.resourcePath = $(fr935.resourcePath);$(ciq22)
+vivoactive3.resourcePath = $(vivoactive3.resourcePath);$(ciq22)
+vivoactive3m.resourcePath = $(vivoactive3.resourcePath);$(ciq22)
+
+# include the top level source directory by default
+base.sourcePath = source/*.mc
+
+# configure style-based source code
+round.sourcePath = $(base.sourcePath);source/styles/RoundCommon.mc
+
+# all the Forerunner semi-round devices can get clumped into one
+semiround-215x180.sourcePath = $(semiround.sourcePath);source/devices/FR230.mc
+
+# configure specific devices
+approachs60.sourcePath = $(round.sourcePath);source/devices/Vivoactive3.mc
+d2bravo.sourcePath = $(round.sourcePath);source/devices/Fenix3.mc
+d2bravo_titanium.sourcePath = $(round.sourcePath);source/devices/Fenix3.mc
+d2charlie.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
+d2delta.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
+d2deltapx.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
+d2deltas.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
+descentmk1.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
+fenix3.sourcePath = $(round.sourcePath);source/devices/Fenix3.mc
+fenix3_hr.sourcePath = $(round.sourcePath);source/devices/Fenix3.mc
+fenix5.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
+fenix5plus.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
+fenix5s.sourcePath = $(round.sourcePath);source/devices/Fenix5S.mc
+fenix5splus.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
+fenix5x.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
+fenix5xplus.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
+fenixchronos.sourcePath = $(round.sourcePath);source/devices/Fenix5S.mc
+fr230.sourcePath = $(round.sourcePath);source/devices/FR230.mc
+fr235.sourcePath = $(round.sourcePath);source/devices/FR230.mc
+fr630.sourcePath = $(round.sourcePath);source/devices/FR230.mc
+fr645.sourcePath = $(round.sourcePath);source/devices/Vivoactive3.mc
+fr645m.sourcePath = $(round.sourcePath);source/devices/Vivoactive3.mc
+fr735xt.sourcePath = $(round.sourcePath);source/devices/FR230.mc
+fr935.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
+vivoactive3.sourcePath = $(round.sourcePath);source/devices/Vivoactive3.mc
+vivoactive3m.sourcePath = $(round.sourcePath);source/devices/Vivoactive3.mc

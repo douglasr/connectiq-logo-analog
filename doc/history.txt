@@ -1,0 +1,9 @@
+Logo Analog Watch Face
+----------------------
+
+Download this watch face from the Garmin Connect IQ store at:
+https://apps.garmin.com/en-CA/apps/13226d6b-0755-4da1-b575-0d7235d88003
+
+
+1.0.0  --  18 Sep 2018
+  - first release (to the open source community)

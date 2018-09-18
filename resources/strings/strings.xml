@@ -1,0 +1,28 @@
+<strings>
+    <string id="AppName">Logo Analog</string>
+
+    <string id="DisplaySecondHandTitle">Display Second Hand</string>
+    <string id="DisplayStepsIndicatorTitle">Display Steps Indicator</string>
+    <string id="DisplayBatteryIndicatorTitle">Display Battery Indicator</string>
+    <string id="AccentColorTitle">Accent Color</string>
+    <string id="SecondHandColorTitle">Second Hand Color</string>
+
+    <string id="SecondHandOff">Off</string>
+    <string id="SecondHandOnGesture">On Gesture</string>
+    <string id="SecondHandOnAlways">Always</string>
+
+	<string id="ColorRed">Red</string>
+	<string id="ColorDarkRed">Dark Red</string>
+	<string id="ColorOrange">Orange</string>
+	<string id="ColorYellow">Yellow</string>
+	<string id="ColorGreen">Green</string>
+	<string id="ColorDarkGreen">Dark Green</string>
+	<string id="ColorBlue">Blue</string>
+	<string id="ColorDarkBlue">Dark Blue</string>
+	<string id="ColorPurple">Purple</string>
+	<string id="ColorPink">Pink</string>
+	<string id="ColorLtGray">Light Gray</string>
+	<string id="ColorDkGray">Dark Gray</string>
+
+	<string id="SameAsAccent">Use Accent Color</string>
+</strings>
