@@ -58,7 +58,7 @@ class LogoAnalogView extends Ui.WatchFace {
         middleX = $.gDeviceSettings.screenWidth/2;
         middleY = $.gDeviceSettings.screenHeight/2;
         deviceStyle = $.gDeviceSettings.screenShape;
-        retrieveSettings();     // retrive the user's settings for this watch face
+        retrieveSettings();     // retrieve the user's settings for this watch face
     }
 
     // set up everything needed to render the watch face

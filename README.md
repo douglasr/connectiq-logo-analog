@@ -25,3 +25,17 @@ Please see the CONTRIBUTING.md file for details on how contribute.
 
 ### Contributors
 * [Douglas Robertson](https://github.com/douglasr)
+
+## Showcase
+The following watch faces are derivatives of  or based on the code for Logo Analog:
+* [UTC Titanium](https://apps.garmin.com/en-CA/apps/30ae26c1-0e81-477c-a5cf-4efbb380092f)
+* [Canada 150](https://apps.garmin.com/en-CA/apps/775b406b-6034-4de9-8c03-7aca8e40d74b)
+* Airlines series:
+    * [Star Alliance](https://apps.garmin.com/en-CA/apps/525c924c-0b61-49e3-9608-05d1fa6a474c)
+    * [Air Canada](https://apps.garmin.com/en-CA/apps/46cdc2e7-eabc-46d0-af34-e179e055f32b)
+    * [Air Georgian](https://apps.garmin.com/en-CA/apps/8f45ed40-df52-44ec-b3e5-4a309ff388e7)
+    * [Air New Zealand](https://apps.garmin.com/en-CA/apps/01407f38-623e-4cae-a595-e2207c193f75)
+    * [Air Transat](https://apps.garmin.com/en-CA/apps/464278ed-d2bc-42dc-bf2e-74742b1bc599)
+    * [Jazz Airlines](https://apps.garmin.com/en-CA/apps/1404124c-8f7a-4d11-b8e7-dad2f42aa597)
+    * [Westjet](https://apps.garmin.com/en-CA/apps/3481e2f9-de3c-4f86-a081-30b26efe581a)
+* [Christmas Tree](https://apps.garmin.com/en-CA/apps/f9a8c187-99d3-4f2f-ab8b-16946b14b3c7)
