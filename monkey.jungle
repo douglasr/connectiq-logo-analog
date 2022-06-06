@@ -65,6 +65,7 @@ vivolife.resourcePath = $(vivolife.resourcePath);$(ciq22)
 base.sourcePath = source/*.mc
 
 # configure style-based source code
+round-208x208.sourcePath = $(base.sourcePath);source/devices/Round208x208.mc
 round-218x218.sourcePath = $(base.sourcePath);source/devices/Round218x218.mc
 round-240x240.sourcePath = $(base.sourcePath);source/devices/Round240x240.mc
 round-260x260.sourcePath = $(base.sourcePath);source/devices/Round260x260.mc
