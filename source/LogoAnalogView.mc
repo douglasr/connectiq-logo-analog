@@ -145,7 +145,7 @@ class LogoAnalogView extends Ui.WatchFace {
         if (dcOffscreenBuffer != null && $.gPartialUpdatesAllowed) {
             dc.clearClip();
             dcCurClip = null;
-            targetDc = dcOffscreenBuffer.getDc();
+            targetDc = getBufferedBitmapDc(dcOffscreenBuffer);
         } else {
             targetDc = dc;
         }
@@ -280,7 +280,7 @@ class LogoAnalogView extends Ui.WatchFace {
             return;
         }
         dc.drawBitmap(0, 0, dcOffscreenBuffer);
-        dc.drawBitmap(middleX,middleY-(dcDateBarBuffer.getDc().getHeight()/2), dcDateBarBuffer);
+        dc.drawBitmap(middleX,middleY-(getBufferedBitmapDc(dcDateBarBuffer).getHeight()/2), dcDateBarBuffer);
     }
 
     // draw the hour and minute hands
@@ -356,7 +356,7 @@ class LogoAnalogView extends Ui.WatchFace {
         var targetDc;
         var posDayX, posMonthX, posY;
         if (dcOffscreenBuffer != null) {
-            targetDc = dcDateBarBuffer.getDc();
+            targetDc = getBufferedBitmapDc(dcDateBarBuffer);
             targetDc.clearClip();
             targetDc.drawBitmap(-middleX, -middleY+targetDc.getHeight()/2, dcOffscreenBuffer);
             posDayX = DeviceOverride.DAY_OF_WEEK_X-(dc.getWidth()/2);
@@ -473,7 +473,7 @@ class LogoAnalogView extends Ui.WatchFace {
     }
 
     function allocateOffscreenBuffer(dc) {
-        dcOffscreenBuffer = new Gfx.BufferedBitmap({
+        var offscreenBufferOptions = {
             :width=>dc.getWidth(),
             :height=>dc.getHeight(),
             :palette=> [
@@ -486,11 +486,15 @@ class LogoAnalogView extends Ui.WatchFace {
                 Gfx.COLOR_DK_BLUE,
                 cAccentColor        // need to be able to buffer the accent color
             ]
-        });
-        dcDateBarBuffer = new Gfx.BufferedBitmap({
-            :width=>dc.getWidth()/2,
-            :height=>dc.getFontHeight(DeviceOverride.DATE_FONT)
-        });
+        };
+
+        var dateBarOptions = {
+            :width => dc.getWidth()/2,
+            :height => dc.getFontHeight(DeviceOverride.DATE_FONT)
+        };
+
+        dcOffscreenBuffer = createBufferedBitmap(offscreenBufferOptions);
+        dcDateBarBuffer = createBufferedBitmap(dateBarOptions);
         dcCurClip = null;
     }
 
@@ -498,6 +502,20 @@ class LogoAnalogView extends Ui.WatchFace {
         dcOffscreenBuffer = null;
         dcDateBarBuffer = null;
         dcCurClip = null;
+    }
+
+    function createBufferedBitmap(bufferOptions) {
+        if (Gfx has :createBufferedBitmap) {
+            return (Gfx.createBufferedBitmap(bufferOptions));
+        }
+        return (new Gfx.BufferedBitmap(bufferOptions));
+    }
+
+    function getBufferedBitmapDc(bufferedBitmap) {
+        if (bufferedBitmap instanceof Gfx.BufferedBitmap) {
+            return (bufferedBitmap.getDc());
+        }
+        return (bufferedBitmap.get().getDc());
     }
 
 }
