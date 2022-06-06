@@ -109,6 +109,11 @@ class LogoAnalogView extends Ui.WatchFace {
             retrieveSettings();
         }
 
+        // use anti-aliased drawing for primitives (if available)
+        if (dc has :setAntiAlias) {
+            dc.setAntiAlias(true);
+        }
+
         // handle allocation or deallocation of the off-screen buffers, as required, based on any changes
         //   to settings and/or time issues rendering
         if (Toybox.Graphics has :BufferedBitmap) {
@@ -211,6 +216,12 @@ class LogoAnalogView extends Ui.WatchFace {
         if (!$.gPartialUpdatesAllowed || dcOffscreenBuffer == null) {
             return;
         }
+
+        // use anti-aliased drawing for primitives (if available)
+        if (dc has :setAntiAlias) {
+            dc.setAntiAlias(true);
+        }
+
         drawBackground(dc);
         clockTime = System.getClockTime();
         drawHands(dc, middleX, middleY, clockTime);
@@ -492,6 +503,9 @@ class LogoAnalogView extends Ui.WatchFace {
 }
 
 class LogoAnalogDelegate extends Ui.WatchFaceDelegate {
+    function initialize() {
+       WatchFaceDelegate.initialize(); 
+    }
     // The onPowerBudgetExceeded callback is called by the system if the
     // onPartialUpdate method exceeds the allowed power budget. If this occurs,
     // the system will stop invoking onPartialUpdate each second, so we set the
