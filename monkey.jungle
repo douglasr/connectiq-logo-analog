@@ -70,6 +70,7 @@ round-218x218.sourcePath = $(base.sourcePath);source/devices/Round218x218.mc
 round-240x240.sourcePath = $(base.sourcePath);source/devices/Round240x240.mc
 round-260x260.sourcePath = $(base.sourcePath);source/devices/Round260x260.mc
 round-280x280.sourcePath = $(base.sourcePath);source/devices/Round280x280.mc
+round-360x360.sourcePath = $(base.sourcePath);source/devices/Round360x360.mc
 round-390x390.sourcePath = $(base.sourcePath);source/devices/Round390x390.mc
 round-416x416.sourcePath = $(base.sourcePath);source/devices/Round416x416.mc
 semiround-215x180.sourcePath = $(base.sourcePath);source/devices/SemiRound215x180.mc
