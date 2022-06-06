@@ -65,46 +65,18 @@ vivolife.resourcePath = $(vivolife.resourcePath);$(ciq22)
 base.sourcePath = source/*.mc
 
 # configure style-based source code
-round.sourcePath = $(base.sourcePath);source/styles/RoundCommon.mc
-
-# all the Forerunner semi-round devices can get clumped into one
-semiround-215x180.sourcePath = $(semiround.sourcePath);source/devices/FR230.mc
+round-218x218.sourcePath = $(base.sourcePath);source/devices/Round218x218.mc
+round-240x240.sourcePath = $(base.sourcePath);source/devices/Round240x240.mc
+round-260x260.sourcePath = $(base.sourcePath);source/devices/Round260x260.mc
+round-280x280.sourcePath = $(base.sourcePath);source/devices/Round280x280.mc
+semiround-215x180.sourcePath = $(base.sourcePath);source/devices/SemiRound215x180.mc
 
 # configure specific devices
 approachs60.sourcePath = $(round.sourcePath);source/devices/Vivoactive3.mc
-d2bravo.sourcePath = $(round.sourcePath);source/devices/Fenix3.mc
-d2bravo_titanium.sourcePath = $(round.sourcePath);source/devices/Fenix3.mc
-d2charlie.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
-d2delta.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
-d2deltapx.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
-d2deltas.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
-descentmk1.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
-fenix3.sourcePath = $(round.sourcePath);source/devices/Fenix3.mc
-fenix3_hr.sourcePath = $(round.sourcePath);source/devices/Fenix3.mc
-fenix5.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
-fenix5plus.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
 fenix5s.sourcePath = $(round.sourcePath);source/devices/Fenix5S.mc
-fenix5splus.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
-fenix5x.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
-fenix5xplus.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
-fenix6.sourcePath = $(round.sourcePath);source/devices/Fenix6.mc
-fenix6pro.sourcePath = $(round.sourcePath);source/devices/Fenix6.mc
-fenix6s.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
-fenix6spro.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
-fenix6xpro.sourcePath = $(round.sourcePath);source/devices/Fenix6X.mc
 fenixchronos.sourcePath = $(round.sourcePath);source/devices/Fenix5S.mc
-fr230.sourcePath = $(round.sourcePath);source/devices/FR230.mc
-fr235.sourcePath = $(round.sourcePath);source/devices/FR230.mc
-fr245.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
-fr245m.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
-fr630.sourcePath = $(round.sourcePath);source/devices/FR230.mc
 fr645.sourcePath = $(round.sourcePath);source/devices/Vivoactive3.mc
 fr645m.sourcePath = $(round.sourcePath);source/devices/Vivoactive3.mc
-fr735xt.sourcePath = $(round.sourcePath);source/devices/FR230.mc
-fr935.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
-fr945.sourcePath = $(round.sourcePath);source/devices/Fenix5.mc
-legacyherocaptainmarvel.sourcePath = $(legacyherocaptainmarvel.sourcePath);source/devices/Fenix3.mc
-legacyherofirstavenger.sourcePath = $(legacyherofirstavenger.sourcePath);source/devices/Fenix6.mc
 marqadventurer.sourcePath = $(round.sourcePath);source/devices/MARQ.mc
 marqathlete.sourcePath = $(round.sourcePath);source/devices/MARQ.mc
 marqaviator.sourcePath = $(round.sourcePath);source/devices/MARQ.mc
@@ -116,6 +88,4 @@ vivoactive3.sourcePath = $(round.sourcePath);source/devices/Vivoactive3.mc
 vivoactive3d.sourcePath = $(round.sourcePath);source/devices/Vivoactive3.mc
 vivoactive3m.sourcePath = $(round.sourcePath);source/devices/Vivoactive3.mc
 vivoactive3mlte.sourcePath = $(round.sourcePath);source/devices/Vivoactive3.mc
-vivoactive4.sourcePath = $(round.sourcePath);source/devices/Fenix6.mc
-vivoactive4s.sourcePath = $(round.sourcePath);source/devices/Fenix3.mc
 vivolife.sourcePath = $(round.sourcePath);source/devices/Vivoactive3.mc
