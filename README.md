@@ -1,5 +1,5 @@
 Logo Analog is a clean analog watch face with an always active second hand, step count and battery
-graphs and a move indicator. 
+graphs and a move indicator.
 
 ## Purpose & Goal
 Logo Analog is designed to be a jumping point for anyone wanting to build an analog watch face,
@@ -48,18 +48,19 @@ The following watch faces are derivatives of  or based on the code for Logo Anal
 * [Flight Chops](https://apps.garmin.com/en-US/apps/333ce8b8-f1b1-41fc-9e48-9892c1a002f4)
 
 ## Supported Devices
-* Approach: S60, S62
+* Approach: S60, S62, S70 (42mm)
 * D2: Air, Air X10, Bravo, Charlie, Delta (incl PX and S), Mach 1
-* Descent: Mk1, Mk2/Mk2i, Mk2 S
+* Descent: Mk1, Mk2/Mk2i, Mk2 S, Mk3 (43mm)
 * Enduro
-* Epix (Gen 2)
-* fēnix: 3/3 HR, 5/5S/5X, 5 Plus, 5X Plus, 5S Plus, 6/6S, 6 Pro (incl 6S Pro, 6X Pro), 7/7S/7X, Chronos
-* Forerunner: 230, 235, 245, 245 Music, 255, 255 Music, 255s, 255s Music, 45, 55, 630, 645, 645 Music, 735xt, 745, 935, 945, 945 LTE, 955
+* Epix (Gen 2), Epix Pro (42mm), Epix Pro (47mm)
+* fēnix: 3/3 HR, 5/5S/5X, 5 Plus, 5X Plus, 5S Plus, 6/6S, 6 Pro (incl 6S Pro, 6X Pro), 7/7S/7X, 7 Pro (incl 7S Pro, 7X Pro), Chronos
+* Forerunner: 230, 235, 245, 245 Music, 255, 255 Music, 255s, 255s Music, 265, 265s, 45, 55, 630, 645, 645 Music, 735xt, 745, 935, 945, 945 LTE, 955
 * Garmin Swim 2
 * Legacy: Captain Marvel, Darth Vader, First Avenger, Rey
 * MARQ: Adventurer, Athlete, Aviator, Captain, Commander, Driver, Expedition, Golfer
+* MARQ (Gen 2): all models
 * Quatix: 3, 5, 7, 7 Sapphire, 7X Solar
 * Tactix: Bravo, Charlie, 7, 7 Pro
-* Venu: Venu, Venu 2, Venu 2 Plus, Venu 2S, Venu M-B
-* Vívoactive: 3, 3 M-B, 3 Music, 3 Music LTW, 4, 4S
+* Venu: Venu, Venu 2, Venu 2 Plus, Venu 2S, Venu 3S, Venu M-B
+* Vívoactive: 3, 3 M-B, 3 Music, 3 Music LTW, 4, 4S, 5
 * Vívolife
