@@ -1,7 +1,7 @@
 /*
 MIT License
 
-Copyright (c) 2018 Douglas Robertson (douglas@edgeoftheearth.com)
+Copyright (c) 2018-2024 Douglas Robertson (douglas@edgeoftheearth.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -522,7 +522,7 @@ class LogoAnalogView extends Ui.WatchFace {
 
 class LogoAnalogDelegate extends Ui.WatchFaceDelegate {
     function initialize() {
-       WatchFaceDelegate.initialize(); 
+       WatchFaceDelegate.initialize();
     }
     // The onPowerBudgetExceeded callback is called by the system if the
     // onPartialUpdate method exceeds the allowed power budget. If this occurs,
