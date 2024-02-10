@@ -1,5 +1,4 @@
 <drawables>
-    <bitmap id="LauncherIcon" filename="launcher_icon.png" />
     <bitmap id="Background" filename="background.png">
         <palette disableTransparency="true">
             <color>000000</color>

@@ -4,62 +4,19 @@ project.manifest = manifest.xml
 # configure CIQ version-based resources
 # ...older devices don't have the always active second hand option
 ciq14 = resources-ciq14
-ciq22 = resources-ciq22
-ciq24 = $(ciq22.resourcePath)
-ciq30 = resources-ciq30
-ciq31 = $(ciq30.resourcePath)
 # include the default resources
 base.resourcePath = resources
 
 # configure device specific resources
-approachs60.resourcePath = $(approachs60.resourcePath);$(ciq22)
 d2bravo.resourcePath = $(d2bravo.resourcePath);$(ciq14)
 d2bravo_titanium.resourcePath = $(d2bravo_titanium.resourcePath);$(ciq14)
-d2charlie.resourcePath = $(d2charlie.resourcePath);$(ciq30)
-d2delta.resourcePath = $(d2delta.resourcePath);$(ciq30)
-d2deltapx.resourcePath = $(d2deltapx.resourcePath);$(ciq30)
-d2deltas.resourcePath = $(d2deltas.resourcePath);$(ciq30)
-descentmk1.resourcePath = $(descentmk1.resourcePath);$(ciq24)
 fenix3.resourcePath = $(fenix3.resourcePath);$(ciq14)
 fenix3_hr.resourcePath = $(fenix3_hr.resourcePath);$(ciq14)
-fenix5.resourcePath = $(fenix5.resourcePath);$(ciq30)
-fenix5plus.resourcePath = $(fenix5plus.resourcePath);$(ciq30)
-fenix5s.resourcePath = $(fenix5s.resourcePath);$(ciq30)
-fenix5splus.resourcePath = $(fenix5splus.resourcePath);$(ciq30)
-fenix5x.resourcePath = $(fenix5x.resourcePath);$(ciq30)
-fenix5xplus.resourcePath = $(fenix5xplus.resourcePath);$(ciq30)
-fenix6.resourcePath = $(fenix6.resourcePath);$(ciq31)
-fenix6pro.resourcePath = $(fenix6.resourcePath);$(ciq31)
-fenix6s.resourcePath = $(fenix6s.resourcePath);$(ciq31)
-fenix6spro.resourcePath = $(fenix6spro.resourcePath);$(ciq31)
-fenix6xpro.resourcePath = $(fenix6xpro.resourcePath);$(ciq31)
 fenixchronos.resourcePath = $(fenixchronos.resourcePath);$(ciq14)
 fr230.resourcePath = $(fr230.resourcePath);$(ciq14)
 fr235.resourcePath = $(fr235.resourcePath);$(ciq14)
-fr245.resourcePath = $(fr245.resourcePath);$(ciq30)
-fr245m.resourcePath = $(fr245m.resourcePath);$(ciq30)
 fr630.resourcePath = $(fr630.resourcePath);$(ciq14)
-fr645.resourcePath = $(fr645.resourcePath);$(ciq24)
-fr645m.resourcePath = $(fr645m.resourcePath);$(ciq24)
 fr735xt.resourcePath = $(fr735xt.resourcePath);$(ciq14)
-fr935.resourcePath = $(fr935.resourcePath);$(ciq22)
-fr945.resourcePath = $(fr945.resourcePath);$(ciq30)
-legacyherocaptainmarvel.resourcePath = $(legacyherocaptainmarvel.resourcePath);$(ciq30)
-legacyherofirstavenger.resourcePath = $(legacyherofirstavenger.resourcePath);$(ciq30)
-marqadventurer.resourcePath = $(marqathlete.resourcePath);$(ciq30)
-marqathlete.resourcePath = $(marqathlete.resourcePath);$(ciq30)
-marqaviator.resourcePath = $(marqaviator.resourcePath);$(ciq30)
-marqcaptain.resourcePath = $(marqcaptain.resourcePath);$(ciq30)
-marqcommander.resourcePath = $(marqathlete.resourcePath);$(ciq30)
-marqdriver.resourcePath = $(marqdriver.resourcePath);$(ciq30)
-marqexpedition.resourcePath = $(marqexpedition.resourcePath);$(ciq30)
-vivoactive3.resourcePath = $(vivoactive3.resourcePath);$(ciq22)
-vivoactive3d.resourcePath = $(vivoactive3d.resourcePath);$(ciq22)
-vivoactive3m.resourcePath = $(vivoactive3m.resourcePath);$(ciq22)
-vivoactive3mlte.resourcePath = $(vivoactive3mlte.resourcePath);$(ciq22)
-vivoactive4.resourcePath = $(vivoactive4.resourcePath);$(ciq30)
-vivoactive4s.resourcePath = $(vivoactive4s.resourcePath);$(ciq30)
-vivolife.resourcePath = $(vivolife.resourcePath);$(ciq22)
 
 # include the top level source directory by default
 base.sourcePath = source/*.mc
