@@ -1,0 +1,10 @@
+<drawables>
+    <bitmap id="Background" filename="background.png">
+        <palette disableTransparency="true">
+            <color>000000</color>
+            <color>FFFFFF</color>
+            <color>AAAAAA</color>
+            <color>555555</color>
+        </palette>
+    </bitmap>
+</drawables>
